@@ -23,11 +23,12 @@ def main():
 			U = File.read(usize)
 			V = File.read(vsize)
 			pos = File.tell()
-			print(pos)
+			#print(pos)
 			#print(type(Y)) # <class 'bytes'>
 			#print(V[0],V[319])
-			filesize = int(width*height*1.5*frame)
-			if pos == filesize :
+			#filesize = int(width*height*1.5*frame)
+			if not V :
+				#eof
 				File.close()
 				break
 			else :
